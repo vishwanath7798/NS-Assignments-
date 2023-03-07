@@ -1,0 +1,33 @@
+Problem Statement
+Write a program to check whether character is an alphabet or not using conditional operator.
+Input
+The first line of the input contains a character ch.
+
+Constraints
+'a', 'A' <= ch <= 'z', 'Z'
+Output
+Print "YES" if it's alphabet otherwise "NO".
+Example
+Sample Input :
+a
+
+Sample Output
+YES
+
+import java.io.*; // for handling input/output
+import java.util.*; // contains Collections framework
+
+// don't change the name of this class
+// you can add inner classes if needed
+class Main {
+    public static void main (String[] args) {
+        // Your code here
+        Scanner sc=new Scanner(System.in);
+        char ch=sc.next().charAt(0);
+        if((ch >= 'A' && ch <= 'Z')||(ch >= 'a' && ch<= 'z')){
+            System.out.print("YES");
+        }else{
+            System.out.print("NO");
+        }
+    }
+}
